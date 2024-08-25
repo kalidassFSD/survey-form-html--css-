@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <style>
+        #container{
+        background-color:green;
+        text-align:center;
+        align-items:center;
+         min-width:100px;
+        }
+        #form{
+
+        background-color:rgb(72,144,241);
+
+        text-align:left;
+
+        padding-top:10px;
+        padding-left:10px;
+        border-style:solid;
+        border-width:5px;
+
+        }
+        #but{
+            text-align:center;
+            margin-left:40%;
+           align-items:center;
+           width:95%;
+        }
+    #form-template{
+
+    }
+    </style>
+</head>
+<body id =container>
+<main  >
+    <h1>CSE Survey Form</h1>
+
+    <form id="form">
+       <label >Name <br> <br><input type="text" placeholder="Enter your name" ></label><br><br>
+        <label>E-mail <br> <br><input type="text" placeholder="Enter your e-mail" ></label><br><br>
+        <label>Age <br><br> <input type="text" placeholder="Enter your age" ></label><br><br>
+        <label>Which option best describes you? <br><br><select>
+            <option>Student</option>
+            <option>Intern</option>
+            <option>Graduate</option>
+            <option>Employee</option>
+        </select>
+        </label><br><br>
+        <label>Would you recommend the CSE course ? <br></label><br>
+         <label for="yes">   <input type="radio" id="yes"name="1" >Yes<br></label>
+             <label for="no"> <input type="radio" id="no" name="1">No<br></label>
+                 <label for="maybe">  <input type="radio" id="maybe" name="1" >May be<br></label>
+
+
+        <label>Languages and Frameworks known</label><br><br>
+
+        <label ><input type = "checkbox"   >Java</label><br>
+        <label ><input type = "checkbox" >C</label><br>
+        <label ><input type = "checkbox" >Python</label><br>
+        <label><input type = "checkbox" >Python</label><br>
+        <label><input type = "checkbox" >SpringBoot</label><br>
+        <label><input type = "checkbox" >Spring</label><br>
+        <label><input type = "checkbox" >Django</label><br>
+        <label><input type = "checkbox" >React</label><br>
+
+        <br> <label>Any comments or suggestions</label><br>
+        <input type="textarea" maxlength="50"placeholder="enter your sugesstions" required><br>
+
+        <br>
+       <label id="but"> <button  type="submit" >Submit</button></label>
+    </form>
+
+</main>
+</body>
+</html>
